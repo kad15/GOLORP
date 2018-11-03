@@ -1,0 +1,25 @@
+%appartenance prolog fournit member()
+%appartient(X,L).  % X objet, L liste
+
+% X est membre de de L si 
+% X est la tête de L ou si
+% X est membre de la queue
+appartient(X,[X,_]).
+appartient(X,[_|T]):- appartient(X,T).
+test:- appartient(a,[b,d,c]).
+
+%concaténation conc(L1,L2,L3) L3 est la concat de L1 et L2
+
+conc([],L,L). %cas liste vide 
+% cas liste non vide. on a X L3 = X L1 L2
+conc([X|L1],L2,[X|L3]):-conc(L1,L2,L3).
+
+test1(L):- conc([a,b],[b,d,c],L).
+test2(L1,L2):- conc(L1,L2,[a,b,c]).
+
+% implé de member() en utilisant conc
+% X member of list L si elle peut être décomposée en deux listes
+% avec X tête de la seconde
+member2(X,L):-conc(_,[X,_],L).
+
+eff3d(L,L1):-conc(L,L1,[_,_,_]).

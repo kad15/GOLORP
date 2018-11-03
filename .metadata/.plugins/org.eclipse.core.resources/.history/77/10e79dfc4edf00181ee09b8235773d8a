@@ -1,0 +1,11 @@
+%appartenance prolog fournit member()
+%appartient(X,L).  % X objet, L liste
+
+% X est membre de de L si 
+% X est la tête de L ou si
+% X est membre de la queue
+appartient(X,[X,_]).
+appartient(X,[_|T]):- appartient(X,T).
+
+test:- appartient(a,[b,a,c]).
+
