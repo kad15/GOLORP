@@ -1,0 +1,92 @@
+pdt: ----------------------------------
+pdt: Thu Nov 01 18:47:00 CET 2018
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: ----------------------------------
+pdt: Thu Nov 01 18:47:00 CET 2018
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: WARNING - 01/11 18:47:02 - Prolog Process Default Process Work: Prolog warnings and errors during initialization:
+Location: /tmp/socketProcess4488880833830566352.tmp:29
+Message: '<meta-call>'/1: Undefined procedure: guitracer/0
+
+Location: /tmp/socketProcess4488880833830566352.tmp:29
+Message: Goal (directive) failed: user:(current_prolog_flag(dialect,swi)->guitracer;true)
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.pdt.common_3.1.2.201504300958/pl/metainference/pdt_prolog_metainference.pl:15
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.pdt.common_3.1.2.201504300958/pl/metainference/pdt_prolog_metainference.pl':19:13: Illegal UTF-8 continuation
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/utils4modules_visibility.pl:25
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/utils4modules_visibility.pl':47:3: Illegal UTF-8 continuation
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/lists.pl:17
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/lists.pl':17:50: Illegal UTF-8 continuation
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/utils4modules.pl:20
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/utils4modules.pl':37:3: Illegal UTF-8 continuation
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/logging.pl:19
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/logging.pl':24:3: Illegal UTF-8 continuation
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/count.pl:22
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/count.pl':29:3: Illegal UTF-8 continuation
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/database.pl:18
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/database.pl':22:3: Illegal UTF-8 continuation
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.pdt.common_3.1.2.201504300958/pl/xref/pdt_xref.pl:450
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.pdt.common_3.1.2.201504300958/pl/xref/pdt_xref.pl':450:0: Illegal UTF-8 continuation
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/database_cache.pl:25
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/database_cache.pl':31:2: Illegal UTF-8 continuation
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.pdt.editor_3.1.2.201504300958/pl/editor/load.pl:20
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.pdt.editor_3.1.2.201504300958/pl/editor/load.pl':20:42: Illegal UTF-8 continuation
+
+
+pdt: ----------------------------------
+pdt: Fri Nov 02 18:30:29 CET 2018
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: ----------------------------------
+pdt: Fri Nov 02 18:30:29 CET 2018
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: WARNING - 02/11 18:30:33 - Prolog Process Default Process Work: Prolog warnings and errors during initialization:
+Location: /tmp/socketProcess3504352535634121088.tmp:29
+Message: '<meta-call>'/1: Undefined procedure: guitracer/0
+
+Location: /tmp/socketProcess3504352535634121088.tmp:29
+Message: Goal (directive) failed: user:(current_prolog_flag(dialect,swi)->guitracer;true)
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.pdt.common_3.1.2.201504300958/pl/metainference/pdt_prolog_metainference.pl:15
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.pdt.common_3.1.2.201504300958/pl/metainference/pdt_prolog_metainference.pl':19:13: Illegal UTF-8 continuation
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/utils4modules_visibility.pl:25
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/utils4modules_visibility.pl':47:3: Illegal UTF-8 continuation
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/lists.pl:17
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/lists.pl':17:50: Illegal UTF-8 continuation
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/utils4modules.pl:20
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/utils4modules.pl':37:3: Illegal UTF-8 continuation
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/logging.pl:19
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/logging.pl':24:3: Illegal UTF-8 continuation
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/count.pl:22
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/count.pl':29:3: Illegal UTF-8 continuation
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/database.pl:18
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/database.pl':22:3: Illegal UTF-8 continuation
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.pdt.common_3.1.2.201504300958/pl/xref/pdt_xref.pl:450
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.pdt.common_3.1.2.201504300958/pl/xref/pdt_xref.pl':450:0: Illegal UTF-8 continuation
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/database_cache.pl:25
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.prolog.library_3.1.2.201504300958/pl/database_cache.pl':31:2: Illegal UTF-8 continuation
+
+Location: /home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.pdt.editor_3.1.2.201504300958/pl/editor/load.pl:20
+Message: '/home/risky/.eclipse/org.eclipse.platform_155965261_linux_gtk_x86_64/plugins/org.cs3.pdt.editor_3.1.2.201504300958/pl/editor/load.pl':20:42: Illegal UTF-8 continuation
+
+
