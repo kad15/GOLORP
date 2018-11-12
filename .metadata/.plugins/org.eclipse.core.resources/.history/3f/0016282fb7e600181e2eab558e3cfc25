@@ -1,0 +1,6 @@
+ccc(X,X).
+ccc(X,N) :- X < N, write(X), Y is X+1, ccc(Y,N).
+
+
+
+

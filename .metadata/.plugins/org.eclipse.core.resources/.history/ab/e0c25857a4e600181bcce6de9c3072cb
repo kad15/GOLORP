@@ -1,0 +1,34 @@
+edge(a,c).
+%edge(c,a).
+edge(a,d).
+edge(c,e).
+edge(e,f).
+edge(d,f).
+path(X,Y):- edge(X,Y);(edge(X,Z), path(Z,Y)).
+path2(X,Y):- edge(X,Y);(path2(X,Z), edge(Z,Y)).
+path3(X,Y):- edge(X,Y);(edge(Z,Y),path3(Z,Y)).
+safe(X) :- \+ (edge(Y,X), safe(Y)).
+%notsafe(X) :- edge(Y,X), safe(Y).
+%safe2(X):- \+ (notsafe(X)).          % safe if pas du tout attaqué or it is not attacked by any safe node
+ 
+ 
+/*
+We do not know the length of the path in advance ⇒ store it in a list
+⇒ Define a predicate path /3 such that path (X, Y, P ) is true if P is a
+list of vertices on a path from X to Y :)
+ */
+
+path(X, Y, P) :- edge(X, Y),P=[] ; ( edge(X,Z), path(Z, Y, P1),P=[Z|P1] ).
+
+
+path(X, Y, P, F) :- edge(X, Y), P = [] ; 
+	(   F=[],
+		edge(X,Z),
+		F1 = [X|F], 
+		\+ (member(Z, F1)), 
+		path(Z, Y, P1, F1), 
+		P = [Z|P1] 
+	).
+
+
+

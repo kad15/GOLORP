@@ -1,0 +1,2 @@
+% append L1 L2
+ reverse(L,A,M):-L=[X|R], reverse(R,[X,A,M]).

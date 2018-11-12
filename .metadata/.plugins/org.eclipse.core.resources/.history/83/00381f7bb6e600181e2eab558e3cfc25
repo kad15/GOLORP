@@ -1,0 +1,19 @@
+/*
+
+sudo4(L):-generate (L) , test (L).
+
+generate (L):-all_member (L,[1,2,3,4]).
+
+test (X11 , X12 , X13 , X14 , X21 , X22 , . . . , X42 , X43 , X44 ) :-
+, all_diff ([X11 , X12 , X13 , X14 ]) , all_diff ([X21 , X22 , X23 , X24 ])
+, all_diff ([X31 , X32 , X33 , X34 ]) , all_diff ([X41 , X42 , X43 , X44 ])
+, all_diff ([X11 , X21 , X31 , X41 ]) , all_diff ([X14 , X24 , X34 , X44 ])
+, all_diff ([X12 , X22 , X32 , X42 ]) , all_diff ([X13 , X23 , X33 , X43 ])
+, all_diff ([X11 , X12 , X21 , X22 ]) , all_diff ([X13 , X14 , X23 , X24 ])
+, all_diff ([X31 , X32 , X41 , X42 ]) , all_diff ([X33 , X34 , X43 , X44 ]).
+
+all_member (L, D) :-
+L = [ ] ; L = [V |R] , member (V, D) , all_member (R, D).
+(5) all_diff (L):-L = [ ] ; L = [V |R] , ¬ member (V, R) , all_diff (R).
+
+*/

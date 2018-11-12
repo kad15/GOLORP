@@ -1,0 +1,2 @@
+count(X, X).
+count(X, N ) :- X < N , write (X) , Y is X + 1 ,nl, count(Y, N ).
