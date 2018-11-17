@@ -24,10 +24,11 @@ path(X, Y, P) :- edge(X, Y),P=[] ; ( edge(X,Z), path(Z, Y, P1),P=[Z|P1] ).
 path(X, Y, P, F) :- edge(X, Y), P = [] ; 
 	(   
 		edge(X,Z),
-		\+ (member(Z, F)), 
+		\+ (member(Z, F)),
 		path(Z, Y, P1, [X|F]), 
 		P = [Z|P1] 
 	).
 
 
+reachable(X,L) :- findall(Y, path(X,Y),L).
 
