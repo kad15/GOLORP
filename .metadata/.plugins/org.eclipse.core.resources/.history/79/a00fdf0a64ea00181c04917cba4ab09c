@@ -1,0 +1,3 @@
+%suffixe d'une liste ie sous liste finissante
+suf(L,L).
+suf(S,[_|L]) :- suf(S,L).
