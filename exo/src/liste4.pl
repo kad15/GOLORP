@@ -113,7 +113,7 @@ transposerPremiers (R , TQ , QQ ).
 
 % creerListe /3
 creerListe (X ,1 ,[ X ]) : - !.
-creerListe (X ,N ,[ X | L ]) : - N > 1 , N1 is N -1 , creerListe (X , N1 , L ).72
+creerListe (X ,N ,[ X | L ]) : - N > 1 , N1 is N -1 , creerListe (X , N1 , L ).
 
 CORRIGÉS TD 3. LISTES
 % univ /2
