@@ -16,15 +16,16 @@ path(X ,Y ,Visited , CurrentCost ,Path , Cost ) :-
 
 cheaperPath(X, Y, N):- path(X ,Y ,Path , Cost), Cost<N.
 reachable(X,L) :- setof(Y,(X, Path, Cost) ^ (path(X,Y,Path,Cost), Y\==X),L).
-*/
+*/ 
 
 path(X ,Y, Cost) :- path(X ,Y ,[] , 0, Cost).
 
 
-path(Y ,Y, _,Cost ,Cost).  % quand Z=Y à la fin de la chaine on ecrit le cout courant, alors égale au cout total, dans le cout final : Cost
+%path(Y ,Y, _,Cost ,Cost).  % quand Z=Y à la fin de la chaine on ecrit le cout courant, alors égale au cout total, dans le cout final : Cost
 path(X ,Y ,Visited , CurrentCost , Cost ) :- 
+	X = Y, Cost = CurrentCost;
 	edge(X ,Z , V ) , \+ member(Z, Visited), 
-	  K is CurrentCost + V , path(Z ,Y ,[ Z | Visited ] , K, Cost). 
+	K is CurrentCost + V , path(Z ,Y ,[ Z | Visited ] , K, Cost). 
 	 % CurrentCost  mémorise la somme partielle des couts arcs, la somme pour l'arc suivant. 
 
 cheaperPath(X, Y, N):- path(X ,Y, Cost), Cost < N.
