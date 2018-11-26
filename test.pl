@@ -1,0 +1,35 @@
+arc(a,b).
+arc(b,c).
+arc(b,d).
+path(X, Y) :- arc(X,Y);arc(X,Z), path(Z,Y).
+
+
+%suffixe d'une liste ie sous liste finissante
+suf(L,L).
+suf(S,[_|L]) :- suf(S,L).  
+
+conc([],L,L).
+conc([X|L], M, [X|N]) :- conc(L,M,N).
+
+% effacer la 1ere occurrence d'un objet dans une liste : delete = del/3
+del(X,[X|L],L).
+del(X,[Y|L],[Y|M]) :- del(X,L,M).
+%  delete une des occurences 
+%  del(X,[Y|L],[Y|M]) :- del(X,L,M)
+
+% effacer toutes les occurrence d'un objet dans une liste : delete tout = delt/3
+delt(_,[],[]).
+delt(X, [X|L],R) :- R=[Y|Z],Y\=X, delt(X,L,R). %,!.
+delt(X, [Y|L],[Y|M]) :-  delt(X,L,M).
+ 
+% sous liste
+%sub(L,L).
+sub(S,L) :- conc(L1,L2,L),conc(S,_,L2). 
+
+% conseq/3 vrai si les elt x et y sont conseq dans L1
+conseq(X,Y,[X,Y|_]).
+conseq(X,Y,[_|L]) :- conseq(X,Y,L).
+
+conseq2(X,Y,L) :- member(X,L),member(Y,L),conc(_,[X|_],R),conc(R,[Y|_], L).
+
+%conseq2(a,b, [c,d,e, a, e,r,t,b, q,s]).
