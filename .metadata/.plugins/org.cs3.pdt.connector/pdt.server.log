@@ -1,6 +1,7 @@
 ---------------------------------
-Thu Nov 01 18:47:00 CET 2018
+Tue Oct 30 20:42:38 CET 2018
 ---------------------------------
+<<<<<<< HEAD
 ERROR: /tmp/socketProcess4488880833830566352.tmp:29:
 	'<meta-call>'/1: Undefined procedure: guitracer/0
 Warning: /tmp/socketProcess4488880833830566352.tmp:29:
@@ -1522,4 +1523,6 @@ Le systäme ne peut trouver le fichier swipl-win.
 ---------------------------------
 Sat Nov 17 06:50:39 CET 2018
 ---------------------------------
+=======
+>>>>>>> 05deecd0a882230bb2e05c335363e62225b6a9a7
 Le systäme ne peut trouver le fichier swipl-win.
