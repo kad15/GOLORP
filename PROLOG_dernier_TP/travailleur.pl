@@ -20,7 +20,8 @@ sol(L) :- L=[X11, X12, X13,X14,X21,X22,X23,X24,X31,X32,X33,X34,X41,X42,X43,X44],
 			fd_maximize(fd_labeling(L), Profit).
 			
 /*
-error(existence_error(procedure,fd_labelling/1),fd_maximize/2)
+L = [0,0,0,1,1,0,0,0,0,1,0,0,0,0,1,0] 
+           X14 X21   X32       X43
 fd_minimize(Goal, X) repeatedly calls Goal to find a value that minimizes 
 the variable X. Goal is a Prolog goal that should instantiate X, 
 a common case being the use of fd_labeling/2 (section 9.9.1)

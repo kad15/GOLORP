@@ -87,7 +87,7 @@ exclu([P,J,DPJ1,FPJ1],[P,J,DPJ2,FPJ2]):- (P1=P2;J1=J2), (FPJ1 #=<DPJ2; FPJ2 #=< 
 
 /*fd_labelli,ng
 */
-solution(L) :- generer_tuple(L),P(L),r(L,LV),fd_labelling(LV).
+solution(L) :- generer_tuple(L),P(L),r(L,LV),fd_labeling(LV).
 
 % pour minimiser introduire Tmax et poster les contraintes sur Tmax
 
