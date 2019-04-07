@@ -1,6 +1,7 @@
 % avec variables booléennes : Xij = si travailleur i réalise le produit j
 % modélisation : variables V, Domaine D et Contraintes C
 sol(L) :- L=[X11, X12, X13,X14,X21,X22,X23,X24,X31,X32,X33,X34,X41,X42,X43,X44],  
+  StartTimes[T1,T2,T3,T4,T5,T6,T7], 
 			fd_domain_bool(L),  /* Domaine boolean des variables */
 			/*cstr : chaque travailleur n'a qu'un produit */
 			X11+X12+X13+X14 #= 1, 
