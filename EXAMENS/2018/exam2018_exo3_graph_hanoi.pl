@@ -1,5 +1,4 @@
 %exam 2018
-
 %EXO 3	Hanoi
 %3.1 validState/1 sur les 3 tiges les listes sont ordonnées
 sorted([]).
