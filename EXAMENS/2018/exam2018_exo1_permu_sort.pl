@@ -18,7 +18,7 @@ permu([X|L],P):-var(X),permu(P,[X|L]).  % var(X) true si X non instancié donc o
 % 2 - stack overflow. l'utilisation du predicat "trace." montre
 %que la permutation se fait sur une liste de plus en longue 
 % constituée de valeurs non instanciées
-%la récursion se fait sur la 1ere liste qui doit donc être instanciée 
+%la récursion se fait sur la 1ere liste via la décomposition [X|L] qui doit donc être instanciée 
 % i.e. permu([1,2],P)
 
 % 3 - sorted
@@ -28,7 +28,7 @@ sorted([_]).
 sorted([X,Y|L]):- X @=< Y, sorted([Y|L]).
  
 
-%4 - permusort/2
+%4 - permusort/2  générer et tester
 permusort([X],[X]).
 permusort(L,S) :- permu(L,S),sorted(S).
 

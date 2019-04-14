@@ -195,11 +195,11 @@ div([X,Y|L],[X|L1],[Y|L3]):- div(L,L1,L3).
 
 
 %applatir ap transforme une liste de listes en une liste unique i;e liste applatie A 
-ap([],[]). % applatir liste vide
-ap(X,[X]). %applatir un elt qui n'est pas une liste
-ap([Tete|Queue],ListePlate):-
-	ap(Tete,TetePlate),
-	ap(Queue, QueuePlate),
+flatten_([],[]). % applatir liste vide
+flatten_(X,[X]). %applatir un elt qui n'est pas une liste
+flatten_([Tete|Queue],ListePlate):-
+	flatten_(Tete,TetePlate),
+	flatten_(Queue, QueuePlate),
 	conc(TetePlate,QueuePlate,ListePlate).
 	
 
