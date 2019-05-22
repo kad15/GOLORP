@@ -19,9 +19,6 @@ tester(S,E,N,D,M,O,R,Y):-
 	O1 is S+M+Reste3, O is O1 mod 10, Reste4 is O1 //10,
 	M is Reste4.
  
-
-
-		
 sol(A,B,C,D,E) :- generate(A,B,C,D,E), test(A,B,C,D,E).
 
 /* toto */

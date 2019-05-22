@@ -80,6 +80,7 @@ plan(I,F,P,N) :- sort(I), sort(F),crossing(I,F), P=[] ;
 		crossing(I,Z), notIn(Z,N), 
 		N1=[I|N], plan(Z,F,P1,N1),P=[Z|P1].
 
+
 path(X, Y, P, F) :- edge(X, Y), P = [] ; 
 	(   
 		edge(X,Z),
