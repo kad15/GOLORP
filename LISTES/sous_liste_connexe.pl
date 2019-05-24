@@ -12,14 +12,7 @@
 %                                L2=S+L3
 % sl2(S,L):- append(L1,L2, L),append(S,L3,L2).
 
-sl2(S,L):- append(_,L2, L),append(S,_,L2).
+sl(S,L):- append(_,L2, L),append(S,_,L2).
 
-% sl2([1,2], [1,a,2]).
+% test : sl([1,2], [1,a,2]).
 
-
-% solution directe ; ne fonctionne pas
-% sl([],_).
-% sl([X|T],[X|R]) :- sl(T,R).
-% sl(S,[_|R]) :- sl(S,R).
-
-%test  sl([1,2], [1,a,2]).
